@@ -1,7 +1,7 @@
 # PortCom Demo — Agentic Development Workshop
 
 Demo project for the Monterro **Agentic Development Workshop**.
-A food ordering platform with compliance monitoring — built with C#/.NET 8 + Vue 3.
+A food ordering platform with compliance monitoring — built with C#/.NET 10 + Vue 3.
 
 ---
 
