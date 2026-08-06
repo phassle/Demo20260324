@@ -15,6 +15,7 @@ builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 var app = builder.Build();
 
+app.UseMiddleware<PortCom.Demo.Middleware.AuthMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
