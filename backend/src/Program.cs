@@ -1,4 +1,5 @@
 using Serilog;
+using PortCom.Demo.Middleware;
 using PortCom.Demo.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,7 @@ builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 var app = builder.Build();
 
+app.UseMiddleware<AuthMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
